@@ -18,21 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var dot = document.querySelectorAll('.dot');
   dot[0].addEventListener('click', () => {
-    scrollTo(0, 0);
+    /* scrollTo(0, 0); */
+  document.documentElement.scrollTop = 0;
   });
   dot[1].addEventListener('click', () => {
-    scrollTo(0, 700);
+  document.documentElement.scrollTop = 700;
+/*   scrollTo(0, 700); */
   });
   dot[2].addEventListener('click', () => {
-    scrollTo(0, 2304);
+  document.documentElement.scrollTop = 2304;
+/*   scrollTo(0, 2304); */
   });
   var scrollnext = document.querySelector('.textarrow');
   scrollnext.addEventListener('click', () => {
-    scrollTo(0, 700);
+  document.documentElement.scrollTop = 700;
+/*   scrollTo(0, 700); */
   })
-
+  if (dot[1].className == "dot active") {
+    document.documentElement.scrollTop = 700;
+  }
 
   window.onscroll = function scrol() {
+    
     var imgnext = document.getElementById('img_next');
     var textarrow = document.getElementById('textarrow');
     if (window.pageYOffset > 3) {
@@ -45,15 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       textarrow.className = "textarrow";
     }
-    if (window.pageYOffset < 202) {
+    
+    if (window.pageYOffset < 302) {
       dot[0].className = "dot active";
     } else dot[0].className = "dot";
-    if (window.pageYOffset >= 202 & window.pageYOffset < 1200) {
+    if (window.pageYOffset >= 302 & window.pageYOffset < 1100) {
       dot[1].className = "dot active";
     } else dot[1].className = "dot";
-    if (window.pageYOffset >= 1200) {
+    if (window.pageYOffset >= 1100) {
       dot[2].className = "dot active";
     } else dot[2].className = "dot";
   };
-
+  if (dot[1].className == "dot active") {
+    document.documentElement.scrollTop = 700;
+  }
 });

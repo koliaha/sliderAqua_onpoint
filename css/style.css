@@ -1,3 +1,22 @@
+@font-face {
+	font-family: 'GothamPro';
+	src: url('../fonts/GothamPro.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: 400;
+  
+
+  font-family: 'GothamPro';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('../fonts/GothamPro-Light.eot') format('embedded-opentype'),
+		url('../fonts/GothamPro-Light.woff') format('woff'),
+		url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 200;
+}
+
 @media(max-width:1024px) {
     html {
         scroll-behavior: smooth;
@@ -7,7 +26,7 @@
         width: 100%;
         margin: 0 auto;
         background-image: url(../img/bg1.png);
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'GothamPro', sans-serif;
         overflow-x: hidden;
     }
 
@@ -400,7 +419,7 @@
         margin-top: 20px ;
     }
 .slider__wrapper{
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 }
 
 
