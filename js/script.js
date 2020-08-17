@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var slideIndex = 3;
   let sliderWrapper = document.querySelector('.slider__wrapper')
-  var rng = document.getElementById('r1');
+  let rng = document.getElementById('r1');
   rng.addEventListener('change', () => {
     if (rng.value <= 100 & rng.value >= 75) {
       rng.value = 100;
@@ -16,32 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-  var dot = document.querySelectorAll('.dot');
-  dot[0].addEventListener('click', () => {
-    /* scrollTo(0, 0); */
-  document.documentElement.scrollTop = 0;
-  });
-  dot[1].addEventListener('click', () => {
-  document.documentElement.scrollTop = 700;
-/*   scrollTo(0, 700); */
-  });
-  dot[2].addEventListener('click', () => {
-  document.documentElement.scrollTop = 2304;
-/*   scrollTo(0, 2304); */
-  });
-  var scrollnext = document.querySelector('.textarrow');
-  scrollnext.addEventListener('click', () => {
-  document.documentElement.scrollTop = 700;
-/*   scrollTo(0, 700); */
+  let dot = document.querySelectorAll('.dot');
+  dot.forEach((el)=>{
+    el.className = "dot"
+    el.addEventListener('click', (elem)=>{
+      elem.className = "dot active"
+    })
   })
-  if (dot[1].className == "dot active") {
-    document.documentElement.scrollTop = 700;
-  }
 
+
+  
+
+ 
   window.onscroll = function scrol() {
-    
-    var imgnext = document.getElementById('img_next');
-    var textarrow = document.getElementById('textarrow');
+    let imgnext = document.getElementById('img_next');
+    let textarrow = document.getElementById('textarrow');
     if (window.pageYOffset > 3) {
       imgnext.className = "img_next active";
     } else {
@@ -66,4 +54,5 @@ document.addEventListener("DOMContentLoaded", function () {
   if (dot[1].className == "dot active") {
     document.documentElement.scrollTop = 700;
   }
+ 
 });

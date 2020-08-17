@@ -11,70 +11,76 @@
 </head>
 
 <body>
+  
+
   <div class="dots">
-    <div class="dot active"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
+<a href="#v1" class="dot active"></a>
+  <a href="#v2" class="dot "></a>
+    <a href="#v3" class="dot "></a>
   </div>
-  <div class="first_page" id='v1'>
-    <div class="nametitle1">
-      <p class="first_string">Всегда ли цели терапии СД2 </p>
-      <p class="sec_string"> на поверхности?</p>
-    </div>
-    <div class="nametitle1_1">Цель по HbA1c</div>
-    <div class="indicate1">
-      <div class="circle1">
-        <div class="circle2">
-          <div class="circle3"></div>
-          <div class="circle4"></div>
+  <div class=" scroll-container">
+    <div class=" scroll-area first_page" id='v1'>
+      <div class="nametitle1">
+        <p class="first_string">Всегда ли цели терапии СД2 </p>
+        <p class="sec_string"> на поверхности?</p>
+      </div>
+      <div class="nametitle1_1">Цель по HbA1c</div>
+      <div class="indicate1">
+        <div class="circle1">
+          <div class="circle2">
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="nametitle1_2">Гипогликемия</div>
-    <div class="indicate2">
-      <div class="circle1">
-        <div class="circle2">
-          <div class="circle3"></div>
-          <div class="circle4"></div>
+      <div class="nametitle1_2">Гипогликемия</div>
+      <div class="indicate2">
+        <div class="circle1">
+          <div class="circle2">
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="nametitle1_3">СС риски</div>
-    <div class="indicate3">
-      <div class="circle1">
-        <div class="circle2">
-          <div class="circle3"></div>
-          <div class="circle4"></div>
+      <div class="nametitle1_3">СС риски</div>
+      <div class="indicate3">
+        <div class="circle1">
+          <div class="circle2">
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="nametitle1_4">Осложнения СД</div>
-    <div class="indicate4">
-      <div class="circle1">
-        <div class="circle2">
-          <div class="circle3"></div>
-          <div class="circle4"></div>
+      <div class="nametitle1_4">Осложнения СД</div>
+      <div class="indicate4">
+        <div class="circle1">
+          <div class="circle2">
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="next"  style="text-align: center">
-      <div class="textarrow" id = "textarrow">
-        <p class="scrollnext">Листайте вниз</p>
-        <div class="arrow"></div>
+      <a href="#v2">
+      <div class="next" style="text-align: center">
+        <div class="textarrow" id="textarrow">
+          <p class="scrollnext">Листайте вниз</p>
+          <div class="arrow"></div>
+        </div>
+        <img src="./img/next.png" id="img_next" alt="orange arrow" srcset="">
       </div>
-      <img src="./img/next.png" id = "img_next" alt="orange arrow" srcset="">
+    </a>
     </div>
-  </div>
-  </div>
-  <div class="second_page" id='v2'>
-    <div class="nametitle2">
-      <p class="first_string">Основа терапии — </p>
-      <p class="sec_string"> патогенез СД2</p>
+    <div class=" scroll-area second_page" id='v2'>
+      <div class="ice">
+      <div class="nametitle2">
+        <p class="first_string">Основа терапии — </p>
+        <p class="sec_string"> патогенез СД2</p>
+      </div>
     </div>
-  </div>
-  <div class="third_page slider" id='v3'>
-    <div class="slideshow-container slider__wrapper">
-        <div class="mySlides slider__item" >
+    </div>
+    <div class=" scroll-area third_page slider" id='v3'>
+      <div class="slideshow-container slider__wrapper">
+        <div class="mySlides slider__item">
           <div class="ice1">
             <div class="text1">Звенья патогенеза СД2</div>
             <div class="picture">
@@ -98,19 +104,20 @@
             </div>
           </div>
         </div>
-      
-    </div>
-    <div class="scrollrange" style="text-align:center">
-      <input type="range" id="r1" value="100" min="1" max="100" step="1">
-      <div class="date">
-        <div>1998</div>
-        <div>2009</div>
-        <div>2016</div>
+
+      </div>
+      <div class="scrollrange" style="text-align:center">
+        <input type="range" id="r1" value="100" min="1" max="100" step="1">
+        <div class="date">
+          <div>1998</div>
+          <div>2009</div>
+          <div>2016</div>
+        </div>
       </div>
     </div>
   </div>
   <script src="./js/script.js"></script>
-  
+
 </body>
 
 </html>
